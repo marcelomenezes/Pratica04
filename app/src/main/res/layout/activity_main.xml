@@ -10,8 +10,61 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ifpe.android.pratica04.MainActivity">
 
-    <TextView
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPersonName"
+        android:text="Nome"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/edit_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="Nota"
+        android:ems="10"
+        android:layout_below="@+id/edit_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/edit_grade" />
+
+    <Button
+        android:text="Inserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_grade"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/botaoInserir"
+        android:onClick="buttonInsertClick"/>
+
+    <Button
+        android:text="Consultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botaoInserir"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="81dp"
+        android:id="@+id/button_query" />
+
+    <Button
+        android:text="Atualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botaoInserir"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/button_update" />
+
+    <Button
+        android:text="Apagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_update"
+        android:layout_alignStart="@+id/button_query"
+        android:id="@+id/button_delete" />
 </RelativeLayout>
